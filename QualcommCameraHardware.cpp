@@ -1,4 +1,3 @@
-
 /*
 ** Copyright 2008, Google Inc.
 ** Copyright (c) 2011 Code Aurora Forum. All rights reserved.
@@ -8128,7 +8127,8 @@ status_t  QualcommCameraHardware::setISOValue(const CameraParameters& params) {
                    mHJR = value;
                }
             }
-
+            		//temp REMOVE!
+			str = "ISO100";
             mParameters.set(CameraParameters::KEY_ISO_MODE, str);
             native_set_parms(CAMERA_PARM_ISO, sizeof(camera_iso_mode_type), (void *)&temp);
             return NO_ERROR;
